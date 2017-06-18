@@ -12,7 +12,7 @@ namespace Model
         {
         }
 
-        public override void FetchNewNumber(int i)
+        public override void FetchNewNumber(int i) //close #3
         {
             if (!i.IsEven())
             {

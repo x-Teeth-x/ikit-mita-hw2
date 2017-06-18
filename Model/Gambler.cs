@@ -8,7 +8,7 @@ namespace Model
 {
     public abstract class Gambler
     {
-        public string Name { get; }
+        public string Name { get; } //close #4
         public int Score { get; protected set; }
 
         public abstract void FetchNewNumber(int i);
@@ -20,7 +20,7 @@ namespace Model
     }
     public static class Even
     {
-        public static bool IsEven(this int i)
+        public static bool IsEven(this int i) //close #2
         {
             return i % 2 == 0;
         }

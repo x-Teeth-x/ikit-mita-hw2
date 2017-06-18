@@ -11,7 +11,7 @@ namespace Model
         public delegate void NumberHendler(int a);
         public event NumberHendler NewNumber;
 
-        public void Generate()
+        public void Generate() //close #1
         {
             Random run = new Random();
             int number = run.Next();
