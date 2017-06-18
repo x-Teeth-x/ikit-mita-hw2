@@ -23,7 +23,10 @@ namespace Debaters
             SilentBob bob = new SilentBob();
             tron.NewNumber += jay.FetchNewNumber;
             tron.NewNumber += bob.FetchNewNumber;
-            tron.Generate(a);
+            for (int i = 0; i < a; i++)
+            {
+                tron.Generate();
+            }
             if (jay.Score > bob.Score)
             {
                 Console.WriteLine(jay.Name);

@@ -11,13 +11,11 @@ namespace Model
         public delegate void NumberHendler(int a);
         public event NumberHendler NewNumber;
 
-        public void Generate(int numb)
+        public void Generate()
         {
             Random run = new Random();
-            for (int i = 0; i < numb; i++)
-            {
-                NewNumber?.Invoke(run.Next());
-            }
+            int number = run.Next();
+            NewNumber?.Invoke(number);
         }
     }
 }

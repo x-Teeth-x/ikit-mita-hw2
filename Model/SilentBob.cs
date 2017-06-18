@@ -14,7 +14,7 @@ namespace Model
 
         public override void FetchNewNumber(int i)
         {
-            if (i.IsEven() == false)
+            if (!i.IsEven())
             {
                 Score = Score + 1;
             }
